@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>도미니언 웹앱</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Nanum+Myeongjo:wght@700;800&family=Noto+Sans+KR:wght@500;700;900&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#241708;--parch:#f3e7c9;--gold:#e6b93e;--cw:128px;--sw:84px;--felt:#1f4a2c}
+:root{--ink:#241708;--parch:#f3e7c9;--gold:#e6b93e;--cw:128px;--sw:96px;--felt:#1f4a2c}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;min-height:100%}
-body{font-family:'Nanum Myeongjo',serif;color:var(--parch);
+body{font-family:'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif;font-weight:500;-webkit-font-smoothing:antialiased;color:var(--parch);
   background-color:#3a2313;
   background-image:
     repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 2px,transparent 2px 120px),
@@ -18,13 +18,13 @@ body{font-family:'Nanum Myeongjo',serif;color:var(--parch);
     repeating-linear-gradient(90deg,rgba(0,0,0,.06) 0 3px,transparent 3px 23px),
     linear-gradient(180deg,#5b3820,#3a2313 45%,#2a180b);
   background-attachment:fixed}
-button{font-family:inherit;font-weight:800;font-size:15px;cursor:pointer;border-radius:6px;padding:9px 16px;
+button{font-family:inherit;font-weight:700;font-size:15px;cursor:pointer;border-radius:6px;padding:9px 16px;
   border:2px solid #4a2f12;background:linear-gradient(#fbeec8,#dcc186);color:#3a230c;box-shadow:0 3px 0 #4a2f12,inset 0 1px 0 #fff8e0}
 button:active{transform:translateY(2px);box-shadow:0 1px 0 #4a2f12}
 button:disabled{opacity:.45;cursor:default;transform:none}
 button.red{background:linear-gradient(#d9826a,#9c3a22);color:#fff;border-color:#5a1a0a;box-shadow:0 3px 0 #5a1a0a}
 button.green{background:linear-gradient(#f3d36b,#c9951e);color:#3a2300;border-color:#6d4a0a;box-shadow:0 3px 0 #6d4a0a,inset 0 1px 0 #fff4c0}
-button.sm{font-size:13px;padding:6px 11px}
+button.sm{font-size:14px;padding:6px 11px}
 input,select{font-family:inherit;font-size:15px;padding:8px 10px;border-radius:6px;border:2px solid #8c6a37;background:#fffaf0;color:#2a1a0e}
 h1.logo{font-family:'Cinzel',serif;font-weight:900;letter-spacing:6px;text-align:center;font-size:clamp(40px,10vw,84px);margin:26px 0 0;
   background:linear-gradient(#fff6cf,#f0c64a 45%,#a8740f 55%,#f3cf6a);-webkit-background-clip:text;background-clip:text;color:transparent;
@@ -35,10 +35,10 @@ h1.logo{font-family:'Cinzel',serif;font-weight:900;letter-spacing:6px;text-align
 .panel{max-width:900px;margin:0 auto 18px;padding:18px 20px;border-radius:6px;color:var(--ink);
   background:radial-gradient(ellipse at 30% 20%,#fbf3dc,#ecdcb3 70%,#dcc592);border:1px solid #6b4a1f;
   box-shadow:0 0 0 4px #2a1a0c,0 0 0 6px #b8903f,0 10px 30px rgba(0,0,0,.6)}
-.panel h2{margin:0 0 12px;font-size:19px;border-bottom:2px solid #b89556;padding-bottom:6px;font-weight:800}
+.panel h2{font-family:'Nanum Myeongjo',serif;margin:0 0 12px;font-size:20px;border-bottom:2px solid #b89556;padding-bottom:6px;font-weight:800}
 .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0}
 .center{text-align:center}
-.foot{text-align:center;color:var(--parch);opacity:.75;font-size:12px;padding:14px;letter-spacing:1px}
+.foot{text-align:center;color:var(--parch);opacity:.85;font-size:13px;padding:14px;letter-spacing:1px}
 .wrap{padding:0 14px}
 .bigbtn{padding:16px 26px;font-size:18px;line-height:1.3}
 
@@ -149,7 +149,7 @@ input[type=range]{width:100%;accent-color:#b8903f}
   display:flex;flex-direction:column;justify-content:safe center;align-items:center;text-align:center;padding:3% 5%;overflow:hidden;min-height:0;margin-bottom:3%}
 .tx.tv{background:transparent;border:0}
 .tx .bn{font-weight:900;font-size:1em;line-height:1.2;white-space:nowrap}
-.tx .p{font-size:.6em;line-height:1.3;margin-top:.25em}
+.tx .p{font-size:.6em;line-height:1.3;margin-top:.25em;font-weight:700}
 .tx.long .p{font-size:.5em;line-height:1.22}.tx.long .bn{font-size:.85em;line-height:1.1}.card.big .tx.long .p{font-size:.52em}
 .card.big .frame{grid-template-rows:12% 31% 1fr 10%}
 .card.big .tx .bn{font-size:.9em}
@@ -271,8 +271,9 @@ table.res tr.win{background:rgba(230,185,62,.35);font-weight:800}
 .plist .row{background:rgba(255,255,255,.45);padding:6px 8px;border-radius:6px;margin:4px 0}
 .code{font-family:'Cinzel',serif;font-size:42px;letter-spacing:10px;color:#6b2c0c;text-align:center}
 .mobile-log,.mobile-trash{display:none}
+@media (max-width:1100px){:root{--sw:86px}}
 @media (max-width:980px){
-  :root{--cw:96px;--sw:66px}
+  :root{--cw:96px;--sw:70px}
   .game{grid-template-columns:1fr;padding:6px}
   .side{display:none}
   .mobile-log{display:inline-block}
